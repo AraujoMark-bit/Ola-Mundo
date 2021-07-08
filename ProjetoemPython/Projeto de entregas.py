@@ -6,11 +6,11 @@ print('''\033[1;31mNOTA:\033[m
 \033[1;32;40mUMA LEITURA DA MESMA, EXIBINDO SOMENTE OS BAIRROS E ADJACÊNCIAS DA AQUELA REGIÃO,TORNANDO ASSIM\033[m
 \033[1;32;40mA ENTREGA MAIS ÁGIL E SEGURA!\033[m''')
 
-sleep(3)
-nome = str(input(('Digite seu Nome:'))).upper()
+#sleep(3)
+nome = str(input(('Digite seu nome:'))).upper()
 print('-' * 20)
-while not nome.isalpha():
-    nome = str(input(('\033[1;31mDADOS INVÁLIDOS!\033[m Digite seu Nome:'))).upper()
+while not nome.split():
+    nome = str(input(('\033[1;31mDADOS INVÁLIDOS!\033[m Digite seu Nome:'))).upper().strip()
 
 idade =(input('Qual sua Idade?:'))
 print('-' * 20)
